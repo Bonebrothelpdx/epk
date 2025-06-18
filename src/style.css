@@ -261,3 +261,23 @@ footer {
   text-align: center;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; /* spacing between items */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .image-grid a img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* stack images on smaller screens */
+    }
+  }
+
